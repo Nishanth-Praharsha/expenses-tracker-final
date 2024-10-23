@@ -12,7 +12,7 @@ Endpoints
 
 User Registration
 
-- POST /auth/register
+- POST http://localhost:3000/api/auth/register
 
   Request Body:
   {
@@ -39,7 +39,7 @@ User Registration
 
 User Login
 
-- POST /auth/login
+- POST http://localhost:3000/api/auth/login
 
   Request Body:
   {

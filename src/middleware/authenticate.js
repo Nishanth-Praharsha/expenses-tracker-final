@@ -13,6 +13,7 @@ function authenticateToken(req, res, next) {
       return res.sendStatus(403);
     }
     req.user = user;
+    console.log("Authenticated User:", req.user); // Log the authenticated user
     next();
   });
 }
