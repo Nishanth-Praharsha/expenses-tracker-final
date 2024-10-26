@@ -6,7 +6,6 @@ const transactionRoutes = require("./src/routes/transactionRoutes");
 const authRoutes = require("./src/routes/authRoutes");
 const errorHandler = require("./src/middleware/errorHandler");
 const logger = require("./src/utils/logger");
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 

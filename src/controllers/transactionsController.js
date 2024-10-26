@@ -41,7 +41,7 @@ const getTransactions = (req, res) => {
   });
 };
 
-// Get a single transaction by ID
+//Get a single transaction by ID
 const getTransactionById = (req, res) => {
   const id = req.params.id;
   const userId = req.user.userId; // Get the user ID from the authenticated user
@@ -53,7 +53,6 @@ const getTransactionById = (req, res) => {
     res.status(200).json(row);
   });
 };
-
 // Update a transaction by ID
 const updateTransaction = (req, res) => {
   const id = req.params.id;

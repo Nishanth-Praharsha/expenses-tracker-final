@@ -15,9 +15,9 @@ const authenticateToken = require("../middleware/authenticate"); // Import authe
 // Define transaction routes (without the '/transactions' part)
 router.post("/", authenticateToken, validateTransaction, addTransaction);
 router.get("/", authenticateToken, getTransactions);
+router.get("/summary", authenticateToken, getSummary);
 router.get("/:id", authenticateToken, getTransactionById);
 router.put("/:id", authenticateToken, validateTransaction, updateTransaction);
 router.delete("/:id", authenticateToken, deleteTransaction);
-router.get("/summary", authenticateToken, getSummary);
 
 module.exports = router;
